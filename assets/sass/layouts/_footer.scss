@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    margin-block: var(--space-4) var(--space-3);
+    font-size: var(--fs-sm);
+
+    &__link {
+        color: var(--text-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

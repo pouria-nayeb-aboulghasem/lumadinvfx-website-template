@@ -1,0 +1,12 @@
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.4s;
+
+    &:hover {
+        box-shadow: 0 4px 32px hsla(230, 72%, 32%, .4);
+    }
+}

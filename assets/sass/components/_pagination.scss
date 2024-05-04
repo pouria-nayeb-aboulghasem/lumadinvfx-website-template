@@ -1,0 +1,24 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space-6);
+    gap: var(--space-1);
+
+    &__link {
+        display: inline-flex;
+        padding: var(--space-1) var(--space-2);
+        color: var(--text-color);
+        font-weight: var(--fw-semi-bold);
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: translateY(-0.15rem);
+        }
+
+        &.pagination__link--active {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+    }
+}

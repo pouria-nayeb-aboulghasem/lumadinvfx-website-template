@@ -1,7 +1,63 @@
 .footer {
-    text-align: center;
-    margin-block: var(--space-4) var(--space-3);
-    font-size: var(--fs-sm);
+    &__container {
+        padding-block: 4rem 6rem;
+        row-gap: 3rem;
+    }
+
+    &__logo {
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: var(--first-color);
+        font-size: var(--h3-font-size);
+        font-family: var(--second-font);
+        margin-bottom: 1.25rem;
+    }
+
+    &__logo i {
+        font-size: 1.25rem;
+    }
+
+    &__data {
+        grid-template-columns: repeat(2, max-content);
+        gap: 3rem;
+    }
+
+    &__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: 1.25rem;
+    }
+
+    &__links {
+        display: grid;
+        row-gap: .5rem;
+    }
+
+    &__info {
+        font-style: normal;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        column-gap: 1.25rem;
+    }
+
+    &__social--link {
+        font-size: var(--fs-sm);
+        color: var(--text-color);
+        opacity: 0.6;
+
+        &:hover {
+            color: var(--clr);
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        margin-block: var(--space-4) var(--space-3);
+        font-size: var(--fs-sm);
+    }
 
     &__link {
         color: var(--text-color);

@@ -64,10 +64,33 @@ let swiperTestimonial = new Swiper('.testimonial__swiper', {
     slidesPerView: 'auto',
     centeredSlides: 'auto',
 
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
     breakpoints: {
         1150: {
             slidesPerView: 3,
             centeredSlides: false
+        }
+    }
+});
+
+/*=============== NEW SWIPER ===============*/
+let swiperNew = new Swiper('.new__swiper', {
+    loop: true,
+    spaceBetween: 16,
+    slidesPerView: 'auto',
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
+    breakpoints: {
+        1150: {
+            slidesPerView: 3
         }
     }
 });

@@ -60,13 +60,13 @@
     &__card i {
         display: block;
         font-size: 3rem;
-        color: var(--first-color);
+        color: var(--primary-color);
         margin-bottom: 1rem;
     }
 
     &__title {
         font-size: var(--h3-font-size);
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -92,16 +92,18 @@
         margin-bottom: 0.5rem;
     }
 
-    &__prices {
+    &__year {
         display: flex;
         justify-content: center;
         align-items: center;
         column-gap: .75rem;
-        margin-bottom: 1.25rem;
+        color: var(--title-color);
+        margin-bottom: var(--space-1);
     }
 
-    &__year {
-        color: var(--title-color);
+    &__genre {
+        color: var(--primary-color);
+        font-size: var(--fs-sm);
     }
 }
 
@@ -194,6 +196,12 @@
     }
 }
 
+.footer {
+    &__content {
+        row-gap: var(--space-6);
+    }
+}
+
 @media screen and (max-width: 320px) {
     .discount {
 
@@ -208,6 +216,18 @@
             padding-inline: 1rem;
         }
     }
+
+    .new__card {
+        flex-direction: column;
+    }
+
+    .footer {
+
+        &__data {
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+        }
+    }
 }
 
 @media screen and (min-width: 450px) {
@@ -215,6 +235,10 @@
         &__card {
             width: 290px;
         }
+    }
+
+    .new__card {
+        width: 390px;
     }
 
     .testimonial {
@@ -231,6 +255,12 @@
         grid-template-columns: 420px;
         justify-content: center;
     }
+
+    .footer {
+        &__data {
+            grid-template-columns: repeat(3, max-content);
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -243,6 +273,13 @@
         &__data {
             width: 420px;
             justify-self: center;
+        }
+
+        .footer {
+            &__content {
+                grid-template-columns: repeat(2, max-content);
+                justify-content: space-between;
+            }
         }
     }
 
@@ -296,6 +333,54 @@
         &__img-1,
         &__img-2 {
             width: 300px;
+        }
+    }
+
+    .new {
+        &__container {
+            padding-top: 2rem;
+        }
+
+        &__card {
+            padding: 1.5rem;
+        }
+
+        &__img {
+            width: 120px;
+        }
+
+        &__title {
+            font-size: var(--h3-font-size);
+        }
+    }
+
+    .footer {
+
+        &__content {
+            grid-template-columns: 2fr 3fr;
+        }
+
+        &__data {
+            grid-template-columns: repeat(3, max-content);
+            column-gap: 4.5rem;
+        }
+
+        &__logo,
+        &__title {
+            font-size: var(--fs-lg);
+            margin-bottom: 1.5rem;
+        }
+
+        &__links {
+            row-gap: 1rem;
+        }
+
+        &__social {
+            column-gap: 1.5rem;
+        }
+
+        &__social-link {
+            font-size: 1.5rem;
         }
     }
 }

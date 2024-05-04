@@ -1,0 +1,60 @@
+.project {
+    margin-top: var(--space-8);
+
+
+    &__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-3);
+    }
+}
+
+.new {
+    &__card {
+        display: flex;
+        align-items: center;
+        column-gap: 2.5rem;
+        background-color: var(--container-color);
+        padding: 1.5rem 1rem;
+        color: var(--text-color);
+        border: 2px solid var(--border-color);
+        transition: border .4s, background-color 0.4s;
+    }
+
+    &__card:hover {
+        border: 2px solid var(--text-color);
+    }
+
+    &__img {
+        width: 100px;
+    }
+
+    &__title {
+        font-size: var(--h2-font-size);
+        margin-bottom: .5rem;
+    }
+
+    &__prices {
+        display: flex;
+        align-items: center;
+        column-gap: .75rem;
+        margin-bottom: .75rem;
+    }
+
+    &__discount {
+        color: var(--title-color);
+    }
+
+    &__price {
+        font-size: var(--small-font-size);
+        text-decoration: line-through;
+    }
+
+    &__stars {
+        color: var(--primary-color);
+        font-size: var(--fs-sm);
+    }
+
+    &__swiper:nth-child(1) {
+        margin-bottom: 2rem;
+    }
+}

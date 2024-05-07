@@ -44,7 +44,7 @@
     }
 
     &__social--link {
-        font-size: var(--fs-sm);
+        font-size: var(--fs-md);
         color: var(--text-color);
         opacity: 0.6;
 
@@ -55,8 +55,8 @@
 
     &__copyright {
         text-align: center;
-        margin-block: var(--space-4) var(--space-3);
         font-size: var(--fs-sm);
+        margin-bottom: var(--space-2);
     }
 
     &__link {

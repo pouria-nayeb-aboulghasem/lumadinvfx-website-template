@@ -77,7 +77,7 @@ let swiperTestimonial = new Swiper('.testimonial__swiper', {
     }
 });
 
-/*=============== NEW SWIPER ===============*/
+/* new swiper */
 let swiperNew = new Swiper('.new__swiper', {
     loop: true,
     spaceBetween: 16,
@@ -94,3 +94,12 @@ let swiperNew = new Swiper('.new__swiper', {
         }
     }
 });
+
+// scrollup
+const scrollUp = () => {
+    const scrollUp = document.getElementById('scroll-up')
+
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+        : scrollUp.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)

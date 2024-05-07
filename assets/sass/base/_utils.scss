@@ -18,3 +18,26 @@
         margin-bottom: 2rem;
     }
 }
+
+.scrollup {
+    position: fixed;
+    right: 1.5rem;
+    bottom: -3rem;
+    background-color: var(--container-color);
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.1);
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s, background-color .4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-0.25rem);
+    background-color: var(--primary-color);
+}
+
+.show-scroll {
+    bottom: 3rem;
+}

@@ -4,13 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/app.min.css">
     <title> About us - LumadinVFX </title>
 </head>
 
 <body>
+    <!-- navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="/" class="nav__logo">
+                Logo
+            </a>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>About us</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./projects.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Studio</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
 
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
 
+                <div class="nav__social">
+                    <a href="#" target="_blank" class="nav__social--link" style="--clr: #1da1f2;--fs-sm:1.2rem">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav__social--link" style="--clr: #0e76a8;--fs-sm:1.5rem">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav__social--link" style="--clr: #ffc0cb;--fs-sm:1.5rem">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav__social--link" style="--clr: #ff0000;--fs-sm:1.65rem">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-3-line"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <div class="about section">
+            <div class="about__container container">
+                <div class="about__content">
+
+                    <h1>lumadinVFX</h1>
+
+                    <p>As a Visual Effects Supervisor at Lumadin VFX, I lead a talented team of compositors and
+                        collaborate
+                        with directors, producers, and other departments to deliver high-quality visual effects for
+                        feature
+                        films and series, I have been in this role since january 2021, and I have a certificate from
+                        Hugo’s
+                        Desk, a platform that provides online courses and tutorials on visual effects and compositing.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- service -->
+        <section class="service section">
+            <div class="service__container container grid">
+                <div class="service__card">
+                    <i class="ri-user-star-line"></i>
+                    <h3 class="service__title"> Elite Group </h3>
+                    <p class="service__description"> Team of experts </p>
+                </div>
+
+                <div class="service__card">
+                    <i class="ri-sparkling-line"></i>
+                    <h3 class="service__title"> High Quality </h3>
+                    <p class="service__description"> Render video and animation </p>
+                </div>
+
+                <div class="service__card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="service__title"> 24/7 Support </h3>
+                    <p class="service__description"> Ready to contribute </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial -->
+        <section class="testimonial section" id="testimonial">
+            <h2 class="section__title">
+                Our Team
+            </h2>
+
+            <div class="testimonial__container container">
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/imgs/testimonial-perfil-1.png" alt="image" class="testimonial__img" />
+                            <h2 class="testimonial__title">Rial Loz</h2>
+                            <p class="testimonial__description">
+                                The best website to buy movies, the purchase
+                                is very easy to make and has great discounts.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/imgs/testimonial-perfil-2.png" alt="image" class="testimonial__img" />
+                            <h2 class="testimonial__title">Rial Loz</h2>
+                            <p class="testimonial__description">
+                                The best website to buy movies, the purchase
+                                is very easy to make and has great discounts.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/imgs/testimonial-perfil-3.png" alt="image" class="testimonial__img" />
+                            <h2 class="testimonial__title">Rial Loz</h2>
+                            <p class="testimonial__description">
+                                The best website to buy movies, the purchase
+                                is very easy to make and has great discounts.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+
+                        <article class="testimonial__card swiper-slide">
+                            <img src="assets/imgs/testimonial-perfil-4.png" alt="image" class="testimonial__img" />
+                            <h2 class="testimonial__title">Rial Loz</h2>
+                            <p class="testimonial__description">
+                                The best website to buy movies, the purchase
+                                is very easy to make and has great discounts.
+                            </p>
+
+                            <div class="testimonial__stars">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-half-fill"></i>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__container container">
+            <div class="footer__content grid">
+                <div class="footer__info">
+                    <h3 class="footer__title">
+                        <i class="ri-book-3-li"></i> LuminaVFX
+                    </h3>
+
+                    <div class="footer__description">
+                        Find and explore the best <br>
+                        videos and animations edit from all our <br>
+                        selected experts.
+                    </div>
+                </div>
+
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">About</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Awards</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Privacy policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Terms of services</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Community</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Our team</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Help center</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <address class="footer__info">
+                                    Av. Hacienda <br>
+                                    Lima 4321, Perú
+                                </address>
+                            </li>
+                            <li>
+                                <address class="footer__info">
+                                    e.book@email.com <br>
+                                    0987-654-321
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">
+            © <a href="#" class="footer__link">LuminaVFX</a> 2024 | All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

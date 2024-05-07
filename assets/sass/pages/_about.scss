@@ -1,0 +1,19 @@
+.about {
+    margin-top: var(--space-10);
+
+    &__content {
+
+        & h1 {
+            font-size: var(--fs-xl);
+            color: var(--title-color);
+            margin-bottom: var(--space-3);
+        }
+
+        & p {
+            color: var(--text-color);
+            font-size: var(--fs-md);
+            line-height: 1.75;
+        }
+
+    }
+}
